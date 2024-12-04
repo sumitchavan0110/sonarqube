@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        SONARQUBE_SERVER = 'http://172.28.95.37:9000'
+        SONARQUBE_SERVER = 'http:localhost:9000'
         PROJECT_KEY = 'jobportal'
-        SONARQUBE_TOKEN = 'sqp_d71cf354e237a65f6011cd03657d2fa738614901'
+        SONARQUBE_TOKEN = ''
         SOURCE_DIR = 'https://github.com/sumitchavan0110/sonarqube.git' // Updated Source Directory
     }
 
