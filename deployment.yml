@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: jobportal-container-app-deployment
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: jobportal
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: jobportal-container
-          image: sumitchavan0110/jobportalimage:v9
+          image: sumitchavan0110/jobportalimage:v1
           command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
           ports:
             - containerPort: 8000
